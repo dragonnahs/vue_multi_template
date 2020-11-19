@@ -4,7 +4,6 @@
  */
 const AutoInjectPlugin = require('auto-inject-plugin')
 const path = require('path')
-const fs = require('fs')
 const getEntry = require('./build/pageEntry')
 const resolve = dir => path.join(__dirname, dir)
 

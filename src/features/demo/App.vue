@@ -11,6 +11,7 @@ export default {
     init() {
       let a = 1
       let obj={ b: 2 }
+      a()
     }
   },
   mounted() {
