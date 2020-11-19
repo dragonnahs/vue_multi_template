@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>此次启动的页面</title>
+    <script>
+      // console.log('htmlWebpackPlugin.options',htmlWebpackPlugin.options)
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>本次启动页面：</h1>
+      <ul>
+        <% for(let i in htmlWebpackPlugin.options.pages){ %>
+          <li>
+            <a href="/<%= htmlWebpackPlugin.options.filePrefix %><%= htmlWebpackPlugin.options.pages[i] %>.html"><%= htmlWebpackPlugin.options.pages[i] %></a>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+    <script>
+      // 有一天晚上开发，亮瞎了双眼
+      if (new Date().getHours() > 20) {
+        document.bgColor = '#000'
+        document.fgColor = '#fff'
+        document.querySelector('a').style = 'color: #fff'
+      }
+    </script>
+  </body>
+</html>
