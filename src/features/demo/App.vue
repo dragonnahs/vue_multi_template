@@ -5,12 +5,17 @@
 <script>
 export default {
   data() {
-    return {
-      data
+    return {}
+  },
+  methods: {
+    init() {
+      let a = 1
+      let obj={ b: 2 }
     }
   },
-  methods: {},
-  mounted() {},
+  mounted() {
+    this.init()
+  },
 }
 </script>
 

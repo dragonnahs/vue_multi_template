@@ -54,7 +54,7 @@ const pagesMaker = () => {
       filename: 'index.html',
       entry: Object.values(entries),
       pages: Object.keys(entries),
-      filePrefix: filePrefix,
+      filePrefix,
       chunks: ['chunk-vendors', 'chunk-common']
     }
   }
