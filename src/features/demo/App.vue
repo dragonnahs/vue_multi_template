@@ -9,8 +9,8 @@ export default {
   },
   methods: {
     init() {
-      let a
-      a()
+      let a=2
+      var obj={ c: 3 }
     }
   },
   mounted() {
