@@ -9,7 +9,7 @@ export default {
   },
   methods: {
     init() {
-      let a = 1
+      let a
       a()
     }
   },
