@@ -10,7 +10,6 @@ export default {
   methods: {
     init() {
       let a = 1
-      let obj={ b: 2 }
       a()
     }
   },
